@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirSoft GunShop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="jquery.flipster.min.css"> 
+    <script src="https://kit.fontawesome.com/660b5483ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!--------HOME SECTION---------->
+
+    <section class="nav-top">
+        <p><img src="./images/caution.png" height="25px">THIS IS A PELLET GUN SHOP</p>
+    </section>
+
+    <section class="home">
+        <nav>
+            <div class="logo">
+                <h2>TPK<span>Code.</span></h2>
+            </div>
+            
+            <div class="nav-links">
+                <ul id="MenuItems">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="accessories.html">ACCESSORIES</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="rifle.html">PRODUCT</a></li>
+                </ul>
+            </div>
+            <a href=""><img src="./images/basket.png" height="35px"></a>
+            <img src="./images/Menu-2-512.webp" height="30px" class="menu-icon" onclick="menutoggle()">
+        </nav>
+        <div class="home-content">
+            <h1><span>Extremely</span> Guns</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Mauris semper<br> efficitur tellus non maximus. Donec varius 
+                dolor ut pretium euismod.<br> Vivamus risus tortor, lobortis 
+                at iaculis tempor, tempus sed enim.</p>
+                <form action="https://www.google.com" method="get">
+                    <div class="search">
+                        <input type="search" placeholder="Search a Gun...." ><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </form>
+             <br><button><a href="rifle.html">BUY NOW</a></button>
+        </div>
+    </section>
+
+ <!--------CHECK NOW SECTION---------->
+
+   <section class="check">
+        <h2>Check Now!</h2>
+      <div class="carousel">
+           <ul>
+            <li><img src="./images/sliding-img.jpg"></li>
+            <li><img src="./images/sliding-img1.jpg"></li>
+            <li><img src="./images/sliding-img2.jpg"></li>
+            <li><img src="./images/sliding-img3.jpg"></li>
+            <li><img src="./images/sliding-img4.jpg"></li>
+            <li><img src="./images/sliding-img5.jpg"></li>
+            <li><img src="./images/sliding-img6.jpg"></li>
+            <li><img src="./images/sliding-img7.jpg"></li>
+            <li><img src="./images/sliding-img8.jpg"></li>
+            <li><img src="./images/sliding-img9.jpg"></li>
+          </ul>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br>
+         elit. Mauris semper efficitur tellus non maximus. </p>
+   </section>
+
+   <!--------LEGENDARY SECTION---------->
+
+    <section class="legendary">
+        <h2>LEGENDARY</h2>
+        <div class="box">
+         <div class="content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur<br>
+                 adipiscing elit. Phasellus eu urna at erat<br>
+                  sollicitudin efficitur. Class aptent taciti sociosqu ad<br>
+                   litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+            <button><a href="contact.html">Contact us</a></button>
+         </div>
+         <div class="img">
+            <img src="./images/golden - Copy.png">
+         </div>
+        </div>
+    </section>
+
+  <!--------FOOTER SECTION---------->
+
+    <section class="footer">
+        <div class="brands">
+            <div class="row">
+                <div class="col">
+                    <img src="./images/coca-cola.jpg">
+                </div>
+                <div class="col">
+                    <img src="./images/gcash.png">
+                </div>
+                <div class="col">
+                    <img src="./images/oppo.png">
+                </div>
+                <div class="col">
+                    <img src="./images/paypal.webp">
+                </div>
+            </div>
+        </div>
+
+        <div class="main-footer">
+            <div class="information-footer">
+                <h5>Information</h5>
+                <p>pages</p>
+                <p>our team</p>
+                <p>features</p>
+                <p>places</p>
+            </div>
+            <div class="resources">
+                <h5>Resources</h5>
+                <p>Monitoring Grader</p>
+                <p>Video creating</p>
+                <p>Terms and services</p>
+                <p>Google API</p>
+            </div>
+            <div class="help">
+                <h5>Help</h5>
+                <p>Sign up</p>
+                <p>Login</p>
+                <p>Terms and service</p>
+                <p>Privacy policy</p>
+            </div>
+            <div class="contact">
+                <h5>Contact</h5>
+                <p>Contact us if need help</p>
+                <p>with anything</p>
+                <p>call</p>
+                <p><img src="./images/fb icon.png"> <img src="./images/ig.png"> <img src="./images/linked in icon.png"></p>
+            </div>
+        </div>
+    </section> 
+
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="jquery.flipster.min.js"></script>
+
+   <script>
+      $('.carousel').flipster({
+        style:'carousel',
+        spacing: -0.3,
+      });
+   </script>
+
+    <!---------js for toggle menu--------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+                else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                }
+        }
+
+                    
+    </script>
+    
+</body>
+</html>
